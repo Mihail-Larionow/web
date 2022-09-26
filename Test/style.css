@@ -1,0 +1,136 @@
+body{
+    background-image: url(src/images/galaxy.jpg);
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+body a{
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding: 10px;
+    background-color: #0B0B24;
+    border-bottom: 5px solid white;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.box-1 {
+    flex: 3;
+    margin: 1%;
+}
+
+.box-2 {
+    flex: 6;
+    margin: auto;
+    text-align: center;
+}
+
+#container-main {
+    display: flex;
+    margin: 1%;
+    padding: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid white;
+}
+#container-main > div{
+    border: 3px dotted white;
+    background-color: rgba(28, 0, 151, 0.295);
+    padding: 10px;
+}
+
+#container-about {
+    display: flex;
+    margin: 1%;
+    padding: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imgsphere{
+    width: 100%;
+    }
+
+#container-about > div{
+    padding: 10px;
+}
+
+#container-about > .box-1{
+    order: 2;
+}
+
+#container-about > .box-2{
+    background-color: rgb(51, 19, 197);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#container-games{
+    background-image: url(src/images/galaxy.jpg);
+    display: flex;
+    margin: 1%;
+    padding: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#gameimage{
+    width: 50%;
+}
+
+#container-games > div{
+    padding: 10px;
+}
+
+#container-games > .box-1{
+    flex: 2;
+    margin-left: 5%;
+    text-align: center;
+}
+
+#container-games > .box-2{
+    flex: 2;
+    background-color: rgb(51, 19, 197);
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#container-photos{
+    background-color: #0B0B24;
+    display: flex;
+    margin: 1%;
+    padding: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+#container-photos > div{
+    padding: 3%;
+}
+#container-photos > .box-1{
+    flex: 1;
+}
+#container-photos > .box-2{
+    flex: 1;
+}
+#container-photos > .box-3{
+    flex: 1;
+}
+#container-photos > .box-4{
+    flex: 1;
+}
+
+footer {
+    background-color: #0B0B24;
+    text-align: center;
+    padding: 1px;
+}
