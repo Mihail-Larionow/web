@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Это просто космос!</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+    <script>
+        $(function () {
+            var games = [];
+            $.getJSON('games.json', function (data) {
+                $.each(data.game, function (i, game) {
+                    var div_block = '<div class="item">' + '<div class="box-1">' + '<a href=' + game.link + '>' + '<img src=' + game.image + '></img>' + '</a>' + '</div>'
+                    div_block += '<div class="box-2">' + '<a href=' + game.link + '>' + '<h2>' + game.text + '</h2>' + '</a>' + '</div>' + '</div>'
+
+                    $(div_block).appendTo("#container-main");
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Обо мне</a></li>
+                <li><a href="#">Фото</a></li>
+                <li><a href="#">Игры</a></li>
+                <li><a href="#">Не придумал</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="description">
+        <h1> Информация была спарсирована с сайта stopgame.ru! </h1>
+        <h3> (первые 15 страниц) </h3>
+    </div>
+
+
+    <div id="container-main" name="main">
+
+    </div>
+
+    <footer>
+        <h5>
+            Работа выполнена на скорую руку и не несет цели кого-то оскорбить!
+            Автор старался и в итоге сделал все по преколу
+        </h5>
+    </footer>
+
+</body>
+
+</html>

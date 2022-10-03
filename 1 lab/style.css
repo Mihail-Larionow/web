@@ -1,0 +1,53 @@
+body {
+    background-image: url(src/images/galaxy.jpg);
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+body a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    padding: 10px;
+    background-color: #0B0B24;
+    border-bottom: 5px solid white;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#description {
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(5, 5, 105, 0.63);
+    border-radius: 10px;
+}
+
+.box-1 {
+    flex: 2;
+}
+
+.box-2 {
+    flex: 6;
+}
+
+footer {
+    background-color: #0B0B24;
+    text-align: center;
+    padding: 1px;
+    border-top: 5px solid white;
+}
